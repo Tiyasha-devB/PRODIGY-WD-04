@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiyasha- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 51);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(6, 6, 40);
+            /* Ensure this color has no border */
+            border: none;
+            /* Add this line to remove any border */
+            box-shadow: none;
+            z-index: 1000;
+            overflow: hidden;
+            /* Add this line to remove any shadow */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgba(141, 113, 14);
+            font-size: 1.04rem;
+        }
+
+        .centerdiv {
+            height: 69vh;
+            margin-top: 122px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centerdiv a {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(15 44 84 / 66%);
+            border-radius: 50%;
+            text-align: center;
+            margin: 10px;
+            color: white;
+            line-height: 90px;
+            box-shadow: 1px 4px 2px 2px rgb(0 0 7);
+
+        }
+
+        .centerdiv a i {
+            font-size: 30px;
+        }
+
+        .centerdiv a {
+            transition: all 0.3s linear;
+        }
+
+        .centerdiv a:hover i {
+            transform: scale(1.4);
+        }
+
+
+        .container {
+            margin: 30px auto;
+            width: 600px;
+            overflow: auto;
+            padding: 3px 2px;
+            border-radius: 10px;
+        }
+
+        #myform {
+            padding: 30px;
+            box-sizing: border-box;
+            background: #23234b9c;
+            border-radius: 10px;
+        }
+
+        #myform label {
+            display: block;
+        }
+
+        #myform input[type='text'] {
+
+            width: 98%;
+            padding: 9px 5px;
+            border: 2px #ccc;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            border: 0;
+            background: #262402;
+            color: #fff;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .btn:hover {
+            background: #232101;
+
+        }
+
+        .bg-dark {
+            background: #141301;
+            color: #fff;
+        }
+
+        .error {
+            color: orangered;
+            font-style: oblique;
+        }
+
+        .footer-flex {
+            background: #0000005e;
+            height: 210px;
+            display: flex;
+            width: 91vw;
+            margin: 19px 49px;
+            justify-content: space-around;
+            padding-top: 20px;
+
+        }
+
+        .footer-first {
+            margin: 10px 10px;
+        }
+
+        .footer-second .list {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .footer-third a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: white
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tiyasha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="centerdiv">
+            <a href="www.instagram.com" target="_blank">
+                <i class="fa fa-instagram"></i></a>
+            <a href="www.whatsapp.com/" target="_blank">
+                <i class="fa fa-whatsapp"></i></a>
+            <a href="www.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin"></i></a>
+            <a href="www.github.com" target="_blank">
+                <i class="fa fa-github"></i></a>
+        </div>
+
+        <section class="container">
+            <form id="myform">
+                <h2 style="text-align: center;">Connect</h2>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="" placeholder="Enter name">
+                </div>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Enter E-mail"> </br>
+                </div>
+                <div>
+                    <label for="ph">Phone No:</label>
+                    <input type="text" id="ph" value="" placeholder="Enter phone no.(10 digits)">
+                </div>
+                </div>
+                <div class="msg"></div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
+
+        </section>
+
+        <script src="main.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-first">
+                <h4>Tiyasha's Developer Portfolio</h4>
+            </div>
+            <div class="footer-second">
+                <ul class="list">Direct Links:
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">Social Media:
+                <a href="www.instagram.com" target="_blank">Instagram
+                    <i class="fa fa-instagram"></i></a>
+                <a href="www.whatsapp.com/" target="_blank">WhatsApp
+                    <i class="fa fa-whatsapp"></i></a>
+                <a href="www.linkedin.com" target="_blank">Linkedin
+                    <i class="fa fa-linkedin"></i></a>
+                <a href="www.github.com" target="_blank">GitHub
+                    <i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+        <div class="footer-rights" style="text-align: center;">Tiyasha's Portfolio | All rights reserved</div>
+    </footer>
+    <script>
+        const myForm = document.querySelector('#myform');
+        const nameInput = document.querySelector('#name');
+        const emailInput = document.querySelector('#email');
+        const phInput = document.querySelector('#ph');
+        const msg = document.querySelector('.msg');
+
+        myForm.addEventListener('submit', onSubmit);
+
+        function onSubmit(e) {
+            e.preventDefault();
+            // Validate inputs
+            if (nameInput.value === '' || emailInput.value === '' || phInput.value === '') {
+                msg.classList.add('error');
+                msg.innerHTML = "Please enter all fields.";
+                setTimeout(() => msg.innerHTML = '', 3000); // Clear message after 3 seconds
+            } else if (phInput.value.length !== 10) {
+                msg.classList.add('error');
+                msg.innerHTML = "Please enter valid phone no.";
+                setTimeout(() => msg.innerHTML = '', 3000); // Clear message after 3 seconds
+            } else {
+
+                alert("Sucess!")
+                // Clear input fields
+                nameInput.value = '';
+                emailInput.value = '';
+                phInput.value = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
